@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Convertor - Furqan Hun</title>
+    <link rel="shortcut icon" href="Assets\logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div class="card" id="input-card">
+        <h1 id="main-heading">Temperature Convertor - Furqan Hun</h1>
+        <div class="card-body">
+        <label for="temp">Enter Temperature</label>
+        <input type="text" name="temp" id="temp">
+        <select name="unit" id="unit" title="Temperature Unit">
+            <option value="celcius">Celcius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <br>
+        <input type="submit" value="Convert" id="submit-btn" class ="btn btn-primary">
+    </div>
+        <div class="card" id="result-card">
+        <div class="card-body">
+    <h2>Result</h2>
+    <div id="result">
+        <label for="celcius">Celcius: </label>
+        <p id="celcius"></p>
+        <label for="fahrenheit">Fahrenheit: </label>
+        <p id="fahrenheit"></p>
+        <label for="kelvin">Kelvin: </label>
+        <p id="kelvin"></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="socails">
+        <span>
+            <a href="https://www.linkedin.com/in/FurqanHun/" target="_blank">
+        <img src = "Assets\linkedin.png" alt = "linkedin" class="socials" id="linkedin">
+        </a>
+        <a href="https://github.com/FurqanHun" target="_blank">
+            <img src = "Assets\github.png" alt = "github" class = "socials">
+        </a>
+        <a href="https://www.instagram.com/furqan_hi_hun/" target="_blank">
+            <img src = "Assets\insta.png" alt = "instagram" class = "socials">
+        </a>
+        </span>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
