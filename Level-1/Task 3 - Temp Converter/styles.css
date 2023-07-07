@@ -28,7 +28,6 @@ body{
     color: aliceblue;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
     
-    
 }
 #main-heading{
     font-size: 1.5rem;
@@ -82,6 +81,18 @@ body{
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
         
         
+    }
+    #temp{
+        margin-left: 1rem;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: gray;
+    }
+    #unit{
+        margin-left: 1rem;
+        margin-top: 1rem;
+        color: gray;
     }
     #main-heading{
         font-size: 1.5rem;
