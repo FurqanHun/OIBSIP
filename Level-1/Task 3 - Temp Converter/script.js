@@ -30,7 +30,14 @@ else
 
 const myButton = document.querySelector('#submit-btn'); //event listener for button
 myButton.addEventListener("click", function() {
+  let temp = document.getElementById("temp").value;
+  if(temp === "" || isNaN(temp)){
+    alert("brotha do you wanna learn what a number is huh...???");
+    event.preventDefault();
+  }
+  else {
   convert();
+  }
 });
 
 function convert() {
