@@ -64,3 +64,54 @@ body{
 .socials:hover{
     transform: scale(1.2);
 }
+
+@media screen and (max-width: 800px) {
+    .card{
+        width: 20rem;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+    #input-card{
+        height: 30rem;
+        margin-top: 5rem;
+        color: aliceblue;
+    }
+    #result-card{
+        margin-left: -0.1rem;
+        color: aliceblue;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
+        
+        
+    }
+    #main-heading{
+        font-size: 1.5rem;
+        margin-left: 1.3rem;
+        margin-top: 0.5rem;
+        color: aliceblue;
+    }
+    #submit-btn{
+        margin-left: 5rem;
+        margin-top: 3rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;
+        border-radius: 20px;
+        width: 10rem;
+        height: 3rem;
+        align-items: center;
+    }
+    #submit-btn:hover{
+        background-color: #2b3035;
+        color: aliceblue;
+        border: 1px solid aliceblue;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
+    }
+    .socials{
+        margin-left: 1rem;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    #linkedin{
+        margin-left: 40%;
+    }
+    
+}
