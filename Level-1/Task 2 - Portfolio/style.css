@@ -1,0 +1,161 @@
+body{
+    background-color: #000000 !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff !important;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    height: 100vh;
+}
+  
+#navhead{
+    margin-right: 39%;
+    margin-left: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+#navhead:hover{
+    color: orangered !important;
+}
+#navbar{
+    margin-top: 1%;
+}
+#intronav{
+    color: orangered !important;
+}
+#navbar a{
+    color: #ffffff ;
+    text-decoration: none;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#navbar a:hover{
+    color: orangered !important;
+    text-decoration: none;
+    text-align: left;
+    box-sizing: border-box;
+}
+#goToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#profilepic {
+    border-radius: 50%;
+    border: 5px solid #FF5733;
+    width: 250px;
+    height: auto;
+    left: -35%;
+    margin-top: -1%;
+    position: relative;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+.container div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+#Introduction, #Skills, #Experience, #Education , #Certificates, #Projects{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 75%;
+    color: orangered !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+  }
+#Introduction{
+    font-weight: 100 !important;
+}
+  
+#name {
+    margin-bottom: 0;
+}
+  
+#title {
+    margin-top: 0;
+}
+.email{
+    margin-left: 57%;
+    margin-top: -8%;
+}
+.socialmedia{
+    margin-left: 57%;
+}
+.socials:hover{
+    transform: scale(1.1);
+}
+.blur {
+    filter: blur(5px);
+    /* Add a transition for the filter property with a duration of 1s and a custom easing function */
+  transition: filter 1s cubic-bezier(0.5, 0, 0.5, 20);
+}
+
+.skills {
+    /* add some margin and padding for spacing */
+    margin: 20px;
+    padding: 10px;
+    /* add a border for visual effect */
+    border: 2px solid black;
+    /* center the inline-block elements horizontally */
+    text-align: center;
+}
+
+  .skills {
+    /* add some margin and padding for spacing */
+    margin: 20px;
+    margin-top: 15%;
+    padding: 10px;
+    /* add a border for visual effect */
+    border: 2px solid black;
+    /* center the inline-block elements horizontally */
+    text-align: center;
+  }
+
+.skills span {
+    /* make the span elements inline-block */
+    display: inline-block;
+    /* add some margin and padding for spacing */
+    margin: 10px;
+    padding: 5px;
+    /* add a border for visual effect */
+    border: 1px solid gray;
+    /* align them vertically in the middle */
+    vertical-align: middle;
+}
+
+.skills span img,.skills span h5 {
+    /* make the img and h5 elements block */
+    display: block;
+}
+  .skills span img {
+    /* center the image horizontally */
+    margin: 0 auto;
+    /* add some margin and padding for spacing */
+    margin-bottom: 5px;
+    padding: 1px;
+}
+.skills span h5 {
+    /* center the text horizontally */
+    text-align: center;
+}
+.skills span:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 orangered;
+}
