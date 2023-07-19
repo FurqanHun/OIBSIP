@@ -37,5 +37,39 @@ const navhead = document.getElementById("navhead");
 navhead.addEventListener("click", () => {
   location.reload();
 });
+//   const intro = document.getElementById("introduction");
+//   const skills = document.getElementById("skills");
+//   const experience = document.getElementById("experience");
+//   const education = document.getElementById("education");
+//   const certificates = document.getElementById("certificates");
+//   const projects = document.getElementById("projects");
+// window.addEventListener("scroll", () => {
+//   const scrolled = window.scrollY;
+//   console.log(scrolled);
 
-
+//   if (Math.ceil(scrolled) > 152 && Math.ceil(scrolled) < 710) {
+//     window.scrollTo({
+//       top: skills.offsetTop,
+//     });
+//   } else if (Math.ceil(scrolled) > 842 && Math.ceil(scrolled) < 1400) {
+//     window.scrollTo({
+//       top: experience.offsetTop,
+      
+//     });
+//   } else if (Math.ceil(scrolled) > 1563 && Math.ceil(scrolled) <1500) {
+//     window.scrollTo({
+//       top: education.offsetTop,
+      
+//     });
+//   } else if (Math.ceil(scrolled) > 2193 && Math.ceil(scrolled) < 2790) {
+//     window.scrollTo({
+//       top: certificates.offsetTop,
+      
+//     });
+//   } else if (Math.ceil(scrolled) > 2909 && Math.ceil(scrolled) < 3470) {
+//     window.scrollTo({
+//       top: projects.offsetTop,
+      
+//     });
+//   }
+// });

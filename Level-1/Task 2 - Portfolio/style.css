@@ -9,6 +9,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 section {
     height: 100vh;
@@ -26,16 +27,16 @@ section {
 #navbar{
     margin-top: 1%;
 }
-#intronav{
-    color: orangered !important;
-}
+
 #navbar a{
-    color: #ffffff ;
+    color: #ffffff;
     text-decoration: none;
     text-align: left;
     box-sizing: border-box;
 }
-
+.active{
+    color: orangered !important;
+}
 #navbar a:hover{
     color: orangered !important;
     text-decoration: none;
