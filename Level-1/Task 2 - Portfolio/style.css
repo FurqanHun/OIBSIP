@@ -84,6 +84,9 @@ section #introduction, #skills, #experience, #education{
 #Introduction, #Certificates, #Projects{
     font-weight: 100 !important;
 }
+#Skills{
+    margin-top: 9rem;
+}
   
 #name {
     margin-bottom: 0;
