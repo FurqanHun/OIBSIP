@@ -11,7 +11,7 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
 }
-section {
+section #introduction, #skills, #experience, #education{
     height: 100vh;
 }
   
@@ -81,7 +81,7 @@ section {
     font-size: 40px;
     font-weight: 500;
   }
-#Introduction{
+#Introduction, #Certificates, #Projects{
     font-weight: 100 !important;
 }
   
@@ -190,4 +190,44 @@ section {
     font-weight: 400;
     margin-left: 5rem;
     margin-top: 15rem;
+}
+#main-card{
+    background-color: #000000 !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 10px;
+    margin-top: 2rem;
+    width: 85%;
+    margin-left: 5rem;
+    align-items: center;
+    
+  
+}
+#sub-card{
+    background-color: #000000 !important;
+    border: 1px solid #ffffff !important;
+    border-color: #FF5733 !important;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: orangered !important;
+}
+.card-text{
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff !important;
+}
+#card-btn{
+    border-radius: 5px;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 15px;
+    font-weight: 400;
+}
+#card-btn:hover{
+    background-color: #FF5733 !important;
+    color: #ffffff !important;
 }
