@@ -14,8 +14,6 @@ You can check the site out [here](https://landingpage-furqanhun.netlify.app/)
 ## Description
 For this task i had to create a portfolio site using HTML, CSS and JS. I also used Bootstrap for some compnents, the site contaons a main page that contaiins a navbar, introduction section, skills section, experience section and education section, I've put certifications and projects on different pages which can be accessed thorugh the nav bar links. The site is also responsive and can be viewed on mobile devices.
 
-You can check the site out [here](https://portfolio-furqanhun.netlify.app/)
-
 ## Screenshots
 ![portfolio introduction ss](Assets/portfolio-1.png)
 ![portfolio skills ss](Assets/portfolio-2.png)
