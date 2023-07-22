@@ -82,6 +82,7 @@ section #introduction, #skills, #experience, #education{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 200;
 }
 .container {
     display: flex;
