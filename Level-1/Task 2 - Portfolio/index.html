@@ -9,9 +9,10 @@
 </head>
 </head>
 <body>
+  <div class = "accessable">
     <button id="goToTopButton" style="display: none;">Go to Top</button>
     <header>
-        <nav>
+        <nav id="pc-nav">
     <ul class="nav nav-tabs" id="navbar">
         <h3 id="navhead">Furqan Hun</h3>
         <li class="nav-item">
@@ -34,41 +35,68 @@
           </li>
       </ul>
       </nav>
+
+<!-- mobile navigation bar -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="mobile-nav" style="display: none;">
+  <a class="navbar-brand" href="#">Furqan Hun</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#introduction">Introduction</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link"  href="#education">Education</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="certificates.html#certificates">Certificates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html#projects">Projects</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+
     </header>
-    
+
     <main>
-    <section id="introduction">
+      <section id="introduction">
         <h2 id="Introduction">Introduction</h2>
-     <div class="container">
-        <img id="profilepic" src="/Assets/furqanhun_profilepic.jpg" alt="Profile Picture">
-        <div>
-        <h1 id="name">Muhammad Furqan Khalil</h1> <br>
-        <p id="title">Software Engineering Student - SMI University</p>
+        <div class="name-title">
+            <h1 id="name">Muhammad Furqan Khalil</h1>
+            <p id="title">Software Engineering Student - SMI University</p>
         </div>
-     </div>
-     <div class="email">
-        <h4 style="color: orangered;">Email</h4>
-        <p>business.furqanhun@gmail.com</p>
-     </div>
-    
+        <div class="email">
+          <h4 style="color: orangered;">Email</h4>
+          <a href="mailto:business.furqanhun@gmail.com" style="text-decoration: none; color: white;">business.furqanhun@gmail.com</a>
+        </div>
         <div class="socialmedia">
-        <h4 style="color: orangered;">Social Media</h4>
-        <div>
+          <h4 style="color: orangered;">Social Media</h4>
+          <div>
             <span>
-                <a href="https://www.linkedin.com/in/FurqanHun/" target="_blank">
-                    <img src="Assets\linkedin.png" alt="linkedin" class="socials" id="linkedin" style="width: 25px; height: 25px;">
-                </a>
-                <a href="https://github.com/FurqanHun" target="_blank">
-                    <img src="Assets\github_fluid.png" alt="github" class="socials" style="width: 25px; height: 25px;">
-                </a>
-                <a href="https://www.instagram.com/furqan_hi_hun/" target="_blank">
-                    <img src="Assets\insta.png" alt="instagram" class="socials" style="width: 25px; height: 25px;">
-                </a>
+              <a href="https://www.linkedin.com/in/FurqanHun/" target="_blank">
+                <img src="Assets\linkedin.png" alt="linkedin" class="socials" id="linkedin" style="width: 25px; height: 25px;">
+              </a>
+              <a href="https://github.com/FurqanHun" target="_blank">
+                <img src="Assets\github_fluid.png" alt="github" class="socials" style="width: 25px; height: 25px;">
+              </a>
+              <a href="https://www.instagram.com/furqan_hi_hun/" target="_blank">
+                <img src="Assets\instagram.png" alt="instagram" class="socials" style="width: 25px; height: 25px;">
+              </a>
             </span>
+          </div>
         </div>
-        </div>
-        </div>
-    </section>
+      </section>
 
     <section id="skills">
     <h2 id="Skills">My Skills</h2>
@@ -98,6 +126,7 @@
     
     <section id="experience">
     <h2 id="Experience">My Experience</h2>
+
     <h4 style="color: orangered;" class="exp-sub-head">Professional Experience</h4>
     <ul class="exp-para">
        <li> Web Development and Designing Intern at Oasis Infobytes (Ongoing)</li>
@@ -126,7 +155,7 @@
 
     <p>Currently learning Godot Engine and Game Development</p>
     <p id="exp-check">Check out <a href="projects.html#projects">My Projects</a> section to see my work</p>
-    </div>
+  
     </section>
 
 
@@ -145,6 +174,12 @@
     <footer>
         <p>Copyright © Furqan Hun</p>
       </footer>
+</div>
+
+<div class="not-accessable" style="display: none;">
+  <h3 style="margin-top: 10rem; margin-left: 2%; margin-right: 2%;"> Sorry! Furqan Hun is not acessible on your device.</h3>
+</div> 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

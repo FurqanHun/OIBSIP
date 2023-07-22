@@ -12,8 +12,43 @@ body{
     overflow-x: hidden;
 }
 section #introduction, #skills, #experience, #education{
-    height: 100vh;
+    height: 100vh !important;
 }
+#introduction {
+    position: relative;
+    height: 100vh;
+    
+  }
+  #education{
+    position: relative;
+    height: 100vh;
+    margin-top: 2rem;
+    margin-top: 20rem;
+    height: 100vh !important;
+    width: 100vw !important;
+    margin-bottom: 2rem;
+  }
+  
+  #introduction::before {
+    content: "";
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 200px;
+    height: 400px;
+    background-image: url('/Assets/furqanhun_profilepic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid #FF5733;
+  }
+  .name-title{
+    top: 4rem;
+    margin-left: 50%;
+    margin-bottom: 30%;
+    position: relative;
+    text-align: center;
+  }
   
 #navhead{
     margin-right: 39%;
@@ -47,15 +82,6 @@ section #introduction, #skills, #experience, #education{
     position: fixed;
     bottom: 20px;
     right: 20px;
-}
-#profilepic {
-    border-radius: 50%;
-    border: 5px solid #FF5733;
-    width: 250px;
-    height: auto;
-    left: -35%;
-    margin-top: -1%;
-    position: relative;
 }
 .container {
     display: flex;
@@ -167,7 +193,7 @@ section #introduction, #skills, #experience, #education{
     font-size: 20px;
     font-weight: 500;
     margin-top: 3%;
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
     margin-left: 5rem;
 }
 .exp-para{
@@ -178,7 +204,7 @@ section #introduction, #skills, #experience, #education{
 #exp-check{
     font-style: italic;
     font-size: 15px;
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 #exp-check a{
     text-decoration: none;
@@ -192,19 +218,19 @@ section #introduction, #skills, #experience, #education{
     font-size: 15px;
     font-weight: 400;
     margin-left: 5rem;
-    margin-top: 15rem;
+    margin-top: 10rem;
+    
 }
-#main-card{
+#main-card {
     background-color: #000000 !important;
     border: 1px solid #ffffff !important;
     border-radius: 10px;
     margin-top: 2rem;
     width: 85%;
-    margin-left: 5rem;
     align-items: center;
-    
-  
-}
+    justify-content: center;
+    margin: 2rem auto; /* Add margin: 2rem auto; to center the element horizontally */
+  }
 #sub-card{
     background-color: #000000 !important;
     border: 1px solid #ffffff !important;
@@ -233,4 +259,443 @@ section #introduction, #skills, #experience, #education{
 #card-btn:hover{
     background-color: #FF5733 !important;
     color: #ffffff !important;
+}
+footer{
+    margin-top: 5rem;
+}
+@media screen and (max-width: 1260px){
+    #pc-nav{
+        display: none !important;
+    }
+    #mobile-nav{
+        display: block !important; 
+        background-color: #363636 !important;
+        padding-right: 15px;
+        text-align: center !important;
+        
+    }
+    #mobile-nav a{
+        text-align: center !important;
+    }
+    #mobile-nav a:hover{
+        color: orangered !important;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #pc-nav{
+        display: none !important;
+    }
+    #mobile-nav{
+        display: block !important; 
+        background-color: #363636 !important;
+        padding-right: 15px;
+        text-align: center !important;
+        
+    }
+    #mobile-nav a{
+        text-align: center !important;
+    }
+    h1{
+        font-size: 30px !important;
+    }
+    h2{
+        font-size: 25px !important;
+    }
+    h3{
+        font-size: 20px !important;
+    }
+    h4{
+        font-size: 15px !important;
+    }
+    h5{
+        font-size: 10px !important;
+    }
+    h6{
+        font-size: 5px !important;
+    }
+    .email{
+        margin-left: 50%;
+        margin-top: -1rem;
+    }
+    .socialmedia{
+        margin-left: 50%;
+        margin-top: 1rem;
+    }
+    #experience{
+        margin-left: -2rem;
+        font-size: small;
+    }
+    #exp-check{
+        font-size: 10px;
+        margin-top: -0.1rem;
+    }
+    #education{
+        margin-left: -2rem;
+        font-size: small;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: 20px;
+    }
+    .container div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: -30px;
+    }
+    #Introduction, #Skills, #Experience, #Education , #Certificates, #Projects{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        margin-left: 75%;
+        color: orangered !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+      }
+    #Introduction, #Certificates, #Projects{
+        font-weight: 100 !important;
+    }
+    #Skills{
+        margin-top: 9rem;
+    }
+    #main-card{
+        margin-left: 1rem;
+    }
+    #sub-card{
+        max-width: 12.5rem !important;
+        
+    }
+    #card-btn{
+        max-width: 7rem !important;
+    }
+    .card-title{
+        font-size: 12px !important;
+    }
+    .card-text{
+        font-size: 9px !important;
+        display: none;
+    }
+    #gotoTopButton{
+        position: fixed !important;
+        bottom: 10px;
+        right: 10px;
+        z-index: 100 !important;
+    }
+    .card{
+        z-index: 1 !important;
+    }
+
+    }
+@media screen and (max-width: 767px) {
+    
+    #name{
+        margin-left: 2rem;
+        font-size: 20px !important;
+        font-weight: 900;
+    }
+    #title{
+        margin-left: 2rem;
+        font-size: 13px !important;
+        font-weight: 400;
+    }
+    #experince p{
+        font-size: 10px !important;
+    }
+    .email h4{
+        font-size: 15px !important;
+    }
+    .email a{
+        font-size: 12px !important;
+    }
+    .socialmedia h4{
+        font-size: 15px !important;
+    }
+    .socialmedia a img{
+        width: 20px !important;
+        height: auto !important;
+    }
+    #introduction{
+        margin-bottom: 0.8rem;
+    }
+    .email{
+        margin-left: 50%;
+        margin-top: 40%;
+    }
+}
+@media screen and (max-width: 650px) {
+
+    #experience{
+        margin-left: -3rem;
+        font-size: small;
+    }
+    .exp-para{
+        font-size: 10px !important;
+    }
+    #exp-check{
+        font-size: 10px;
+        margin-top: 8rem;
+    }
+    .edu-para{
+        font-size: 10px !important;
+    } 
+    footer{
+        font-size: 10px !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    #experience, #education {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      position: relative;
+    z-index: 1;
+    }
+    #Introduction, #Skills, #Experience, #Education , #Certificates, #Projects{
+        font-size: 25px !important;
+        margin-left:65%
+    }
+    #Education{
+        margin-top: 5rem;
+    }
+    #footer {
+      margin-top: 10rem;
+      z-index: 1;
+    }
+  }
+@media screen and (max-width: 550px) {
+    #Introduction, #Skills, #Experience, #Education , #Certificates, #Projects{
+        font-size: 25px !important;
+        margin-left:65%
+    }
+    #experience{
+        margin-left: -3rem;
+        font-size: small;
+    }
+    .exp-para{
+        font-size: 10px !important;
+    }
+    #exp-check{
+        font-size: 10px;
+        margin-top: 8rem;
+    }
+    .edu-para{
+        font-size: 10px !important;
+    } 
+    footer{
+        font-size: 10px !important;
+    }
+    
+}
+@media screen and (max-width: 527px) {
+    #introduction{
+        margin-bottom: 0.8rem;
+    }
+    
+}
+@media screen and (max-width: 497px) {
+    .email, .socialmedia{
+    margin-left: 14rem;
+    }
+    #title, #name{
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+    #experience, #education{
+        margin-left: -4rem;
+        margin-right: 1rem;
+    }
+    #introduction{
+        margin-bottom: 0.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .email, .socialmedia{
+        margin-left: 12rem;
+        }
+        #experience{
+            margin-right: 1rem;
+        }
+        #introduction{
+            margin-bottom: 0.8rem;
+        }
+    
+}
+@media screen and (max-width: 450px) {
+    #Introduction, #Skills, #Experience, #Education , #Certificates, #Projects{
+        font-size: 25px !important;
+        margin-left:60%
+    }
+    #name, #title{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+   
+    #name{
+        margin-top: 3rem;
+        font-size: 15px !important;
+    }
+    #title{
+        font-size: 10px !important;
+    }
+    .email, .socialmedia{
+        margin-left: 10rem;
+        }
+    .email{
+        margin-left: 50%;
+            margin-top: 60%;
+    }
+        #experience{
+            margin-right: 1rem;
+        }
+    #introduction{
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #Introduction, #Skills, #Experience, #Education , #Certificates, #Projects{
+        font-size: 25px !important;
+        margin-left:55%
+    }
+    #introduction{
+        margin-bottom: 0.5rem;
+    }
+    
+    #name{
+        margin-top: 3rem;
+        font-size: 15px !important;
+    }
+    #title{
+        font-size: 10px !important;
+    }
+    .email, .socialmedia{
+        margin-left: 10rem;
+        }
+    .email{
+            margin-left: 50%;
+            margin-top: 60%;
+    }
+        #experience{
+            margin-right: 1rem;
+        }
+    .name-title{
+        margin-left: 45%;
+    }
+}
+@media screen and (max-width: 380px) {
+    #Introduction, #Skills,#Experience, #Education , #Projects{
+        font-size: 24px !important;
+        margin-left:60% !important;
+    }
+    #Certificates{
+        font-size: 24px !important;
+        margin-left:50% !important;
+    }
+    #exp-check{
+        font-size: 10px;
+        margin-top: 4rem;
+    }
+    #experience img{
+        height: 30px;
+        width: 30px;
+    }
+    #introduction{
+        margin-bottom: 0.5rem;
+    }
+    #experience h4{
+        font-size: 13px !important;
+        
+    }
+    #name{
+        margin-top: 3rem;
+        font-size: 15px !important;
+    }
+    #title{
+        font-size: 10px !important;
+    }
+    .email, .socialmedia{
+        margin-left: 9rem;
+        }
+    .email{
+        margin-left: 50%;
+        margin-top: 90%;
+    }
+        #experience{
+            margin-right: 1rem;
+        }
+    
+}
+
+@media screen and (max-width: 350px) {
+    #Introduction, #Skills,#Experience, #Education , #Projects{
+        font-size: 24px !important;
+        margin-left:55% !important;
+    }
+    #Certificates{
+        font-size: 24px !important;
+        margin-left:45% !important;
+    }
+    #exp-check{
+        font-size: 10px;
+        margin-top: 4rem;
+    }
+    #experience img{
+        height: 30px;
+        width: 30px;
+    }
+    #experience h4{
+        font-size: 13px !important;
+        
+    }
+    #name{
+        margin-top: 3rem;
+        font-size: 15px !important;
+    }
+    #title{
+        font-size: 10px !important;
+    }
+    .email, .socialmedia{
+        margin-left: 9rem;
+        }
+    .email{
+        margin-left: 50%;
+        margin-top: 90%;
+    }
+        #experience{
+            margin-right: 1rem;
+        }
+    #introduction{
+        margin-bottom: 0.5rem;
+    }
+    
+}
+@media screen and (max-width: 300px) {
+    .accessable{
+        display: none !important;
+    }
+    .not-accessable{
+        display: block !important;
+    }
+    
+}
+
+/* 850 and onward width  */
+@media screen and (max-width:1199px){
+    .email, .socialmedia{
+        margin-left: 50%;
+    }
+}
+.img-fluid{
+    border-radius: 50%;
+    border: 5px solid #FF5733;
+    width: 200px;
+    height: auto;
+    margin-left: -3rem;
 }
